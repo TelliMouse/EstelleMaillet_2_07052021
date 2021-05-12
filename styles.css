@@ -1,0 +1,180 @@
+body
+{
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/*Header*/
+header
+{
+    display: flex;
+    max-height: 80px;
+    max-width: 100%;
+}
+
+header nav ul li a
+{
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul a:hover
+{
+    color: #0065FC;
+}
+
+header nav ul a:visited
+{
+    
+}
+
+#logo img
+{
+    max-height: 50%;
+    max-width: 33%;
+}
+
+nav ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 33%;
+    text-align: right;
+    max-height: 100%;
+}
+
+/*Hébergements*/
+#hebergements
+{
+    display: flex;
+}
+
+#hebergements_marseille
+{
+    display: flex;
+    background: #F2F2F2;
+}
+
+aside
+{
+    display: flex;
+    background: #F2F2F2;
+}
+
+.card1
+{
+    background: white;
+    position: absolute;
+}
+
+#cannebiere
+{
+    background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/cannebiere_s.jpg) no-repeat;
+    position: relative;
+}
+
+#hotel_port
+{
+    background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/hotel_port_s.jpg) no-repeat;
+    position: relative;
+}
+
+#hotel_mouettes
+{
+    background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/hotel_mouettes_s.jpg) no-repeat;
+    position: relative;
+}
+
+#hotel_mer
+{
+    background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/hotel_mer_s.jpg) no-repeat;
+    position: relative;
+}
+
+#auberge_panier
+{
+    background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/hotel_panier_s.jpg) no-repeat;
+    position: relative;
+}
+
+#hotel_amina
+{
+    background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/hotel_amina_s.jpg) no-repeat;
+    position: relative;
+}
+
+#soleil_matin
+{
+    background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/hotel_soleil_s.jpg) no-repeat;
+    position: relative;
+}
+
+#coeur_eau
+{
+    background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/coeur_eau_s.jpg) no-repeat;
+    position: relative;
+}
+
+#bleu_blanc
+{
+    background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/hotel_bleu_s.jpg) no-repeat;
+    position: relative;
+}
+
+/*Activités*/
+#vieux_port
+{
+    background: url(Projet\ 2\ -\ Reservia/images/activites/4_small/vieux_port_s.jpg) no-repeat;
+    position: relative;
+}
+
+#fort_pomegues
+{
+    background: url(Projet\ 2\ -\ Reservia/images/activites/4_small/fort_pomegues_s.jpg) no-repeat;
+    position: relative;
+}
+
+#iles_frioul
+{
+    background: url(Projet\ 2\ -\ Reservia/images/activites/4_small/iles_frioul_s.jpg) no-repeat;
+    position: relative;
+}
+
+#parc_calanques
+{
+    background: url(Projet\ 2\ -\ Reservia/images/activites/4_small/parc_calanques_s.jpg) no-repeat;
+    position: relative;
+}
+
+#notre_dame
+{
+    background: url(Projet\ 2\ -\ Reservia/images/activites/4_small/notre_dame_s.jpg) no-repeat;
+    position: relative;
+}
+
+#parc_longchamps
+{
+    background: url(Projet\ 2\ -\ Reservia/images/activites/4_small/parc_longchamps_s.jpg) no-repeat;
+    position: relative;
+}
+
+/*Footer*/
+footer
+{
+    background: #F2F2F2;
+    display: flex;
+}
+
+div h3 + ul
+{
+    list-style: none;
+}
