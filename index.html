@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6815f1ed53.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 <body>
-    <!--Rajouter les liens et alt des icones-->
     <header>
         <!--logo-->
         <div id="logo">
-            <img src="Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="Logo Reservia" />
+            <img src="Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo Reservia" />
         </div>
         <!--nav-->
         <nav>
@@ -36,11 +36,12 @@
         <!--formumaire search-->
         <div id="search_bar">
             <div id="icone_search">
-                <img src="#" />
+                <i class="fas fa-map-marker-alt"></i>
             </div>
             <form method="post" action="#">
                 <p><input type="search" name="search_keyword" id="search_keyword" value="Marseille, France" /></p>
-                <p><input type="submit" value="Rechercher" /></p>
+                <p><input type="submit" value="Rechercher" id="rechercher"/></p>
+                <p><button type="submit" class="bouton" id="icone_rechercher"><i class="fas fa-search" style="color: white;"></i></button></p>
             </form>
         </div>
         <div id="filters">
@@ -48,7 +49,7 @@
             <a href="#">
                 <div class="filter">
                     <div class="icone">
-                        <img src="#" />
+                        <i class="fas fa-money-bill-wave" style='color: #0065FC;'></i>
                     </div>
                     <p>Économique</p>
                 </div>
@@ -56,7 +57,7 @@
             <a href="#">
                 <div class="filter">
                     <div class="icone">
-                        <img src="#" />
+                        <i class="fas fa-child" style="color:#0065FC;"></i>
                     </div>
                     <p>Familial</p>
                 </div>
@@ -64,7 +65,7 @@
             <a href="#">
                 <div class="filter">
                     <div class="icone">
-                        <img src="#" />
+                        <i class="fas fa-heart" style="color: #0065FC;"></i>
                     </div>
                     <p>Romantique</p>
                 </div>
@@ -72,7 +73,7 @@
             <a href="#">
                 <div class="filter">
                     <div class="icone">
-                        <img src="#" />
+                        <i class="fas fa-dog" style="color: #0065FC;"></i>
                     </div>
                     <p>Animaux autorisés</p>
                 </div>
@@ -81,7 +82,7 @@
         </div>
         <div id="info">
             <div id="icone_info">
-                <img src="#" />
+                <i class="fas fa-info" style="color:#0065FC"></i>
             </div>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
@@ -187,7 +188,7 @@
         </div>
         <aside>
             <h2>Les plus populaires</h2>
-            <img src="" alt="Icône d'une augmentation" />
+            <i class="fas fa-chart-line"></i>
             <a href="#">
                 <div id="soleil_matin">
                     <div class="card2">

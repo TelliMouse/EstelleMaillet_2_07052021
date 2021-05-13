@@ -15,31 +15,58 @@ h1
 header
 {
     display: flex;
-    max-height: 80px;
-    max-width: 100%;
+    position: relative;
+    align-items: baseline;
+    justify-content: space-between;
+    min-height: auto;
+}
+
+#logo
+{
+    align-self: center;
+}
+
+nav
+{
+    position: right;
+    flex-wrap: wrap-reverse;
+}
+
+@media all and (max-width: 992px)
+{
+    header
+    {
+        align-items: flex-start;
+    }
+    header nav ul li:nth-child(1), header nav ul li:nth-child(2)
+    {
+        align-self: flex-end;
+    }
 }
 
 header nav ul li a
 {
-    font-size: 1em;
+    font-size: 0.9em;
     text-decoration: none;
+    margin: 10px;
+}
+
+header nav ul li:nth-child(3)
+{
     font-weight: bold;
+    color: #0065FC;
 }
 
 header nav ul a:hover
 {
     color: #0065FC;
+    border-top: #0065FC 1px solid;
+    padding-top: 15px;
 }
 
 header nav ul a:visited
 {
-    
-}
-
-#logo img
-{
-    max-height: 50%;
-    max-width: 33%;
+    display: none;
 }
 
 nav ul
@@ -50,6 +77,48 @@ nav ul
     max-width: 33%;
     text-align: right;
     max-height: 100%;
+}
+
+/*Search Bar*/
+#search_bar
+{
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+#icone_search
+{
+    border: 1px black;
+    background: #F2F2F2;
+}
+
+#rechercher
+{
+    background-color: #0065FC;
+    color: white;
+    margin-left: 0%;
+}
+
+#icone_rechercher
+{
+    background-color: #0065FC;
+}
+
+@media all and (max-width: 992px)
+{
+    #rechercher
+    {
+        display: none;
+    }
+}
+
+@media all and (min-width: 992px)
+{
+    #icone_rechercher
+    {
+        display: none;
+    }
 }
 
 /*Hébergements*/
@@ -172,6 +241,8 @@ footer
 {
     background: #F2F2F2;
     display: flex;
+    align-items: baseline;
+    justify-content: space-between
 }
 
 div h3 + ul
