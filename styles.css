@@ -223,6 +223,17 @@ form
     font-weight: bold;
 }
 
+#info
+{
+    display: flex;
+}
+
+#icone_info
+{
+    border: #f2f2f2 solid 1px;
+    border-radius: 10px/10px;
+}
+
 /*Hébergements*/
 .far\ fa-star, .fas\ fa-star
 {
@@ -238,25 +249,44 @@ form
 {
     display: flex;
     background: #F2F2F2;
+    max-width: 66%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: #F2F2F2 1px solid;
+    border-radius: 10px/10px;
 }
 
 aside
 {
     display: flex;
+    flex-direction: column;
     background: #F2F2F2;
+    max-width: 33%;
+    border-radius: 10px/10px;
+}
+
+.carte_herbergement
+{
+    object-fit: none;
+    max-width: 33%;
+    position: relative;
+    overflow: hidden;
+    border: solid #F2F2F2 1px;
+    border-radius: 10px/10px;
 }
 
 .card1
 {
     background: white;
-    position: absolute;
     color: black;
+    align-self: flex-end;
+    max-height: 33%;
+    position: absolute bottom;
 }
 
 #cannebiere
 {
     background: url(Projet\ 2\ -\ Reservia/images/hebergements/4_small/cannebiere_s.jpg) no-repeat;
-    position: relative;
 }
 
 #hotel_port
@@ -308,6 +338,21 @@ aside
 }
 
 /*Activités*/
+.carte_activite
+{
+    object-fit: none;
+    overflow: hidden;
+    border-radius: 10px/10px;
+    position: relative;
+    max-width: 25%;
+}
+
+.activity_name
+{
+    background-color: white;
+    position: fixed bottom; /*ca ne fonctionne pas*/
+}
+
 #vieux_port
 {
     background: url(Projet\ 2\ -\ Reservia/images/activites/4_small/vieux_port_s.jpg) no-repeat;
