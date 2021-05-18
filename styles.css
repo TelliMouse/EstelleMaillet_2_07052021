@@ -79,7 +79,7 @@ nav ul li a:hover
 
     nav
     {
-        position: right;
+        justify-self: flex-end;
     }
 
     nav ul li a:hover
@@ -174,11 +174,6 @@ form
     {
         display: none;
     }
-
-    #search_keyword
-    {
-        border-radius: 0 -5px -5px 0;
-    }
 }
 
 @media all and (min-width: 992px) /*Ordinateurs et grands écrans*/
@@ -193,8 +188,7 @@ form
 #filters
 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .filter
@@ -245,14 +239,13 @@ form
     display: flex;
 }
 
-#hebergements_marseille
+#hebergements_marseille /*CA NE MARCHE PAS*/
 {
     display: flex;
     background: #F2F2F2;
     max-width: 66%;
-    justify-content: space-around;
     flex-wrap: wrap;
-    border: #F2F2F2 1px solid;
+    border: #F2F2F2 10px solid;
     border-radius: 10px/10px;
 }
 
@@ -263,6 +256,11 @@ aside
     background: #F2F2F2;
     max-width: 33%;
     border-radius: 10px/10px;
+}
+
+.card2
+{
+    background: white;
 }
 
 .carte_herbergement
@@ -281,7 +279,6 @@ aside
     color: black;
     align-self: flex-end;
     max-height: 33%;
-    position: absolute bottom;
 }
 
 #cannebiere
@@ -350,7 +347,9 @@ aside
 .activity_name
 {
     background-color: white;
-    position: fixed bottom; /*ca ne fonctionne pas*/
+    /*align-self: flex-end; /*ca ne marche pas*/*/
+    /*position: fixed;
+    bottom: 100px;*/
 }
 
 #vieux_port
@@ -394,11 +393,16 @@ footer
 {
     background: #F2F2F2;
     display: flex;
-    align-items: baseline;
-    justify-content: space-between
+    justify-content: space-evenly;
+}
+
+.liste_footer
+{
+    margin-right: 18%;
 }
 
 div h3 + ul
 {
     list-style: none;
+    padding-inline-start: 0px;
 }
