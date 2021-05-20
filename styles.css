@@ -21,65 +21,19 @@ a:visited
     display: none;
 }
 
-/*Header*/
-header
-{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-}
-
-nav ul li a
-{
-    font-size: 0.9em;
-    text-decoration: none;
-    margin: 10px;
-}
-
-nav ul li:nth-child(1), nav ul li:nth-child(2)
-{
-    color: black;
-}
-
-nav ul li:nth-child(3)
-{
-    font-weight: bold;
-    color: #0065FC;
-}
-
-nav ul li a:visited
-{
-    display: none; /*Je suis pas sûre que ça marche*/
-}
-
-nav ul
-{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-
-nav ul li a:hover
-{
-    color: #0065FC;
-}
-
-@media all and (min-width: 992px) /*Ordinateurs et grands écrans*/
+/*Header*/ /*C'est bon sauf pour les problèmes de couleur et voir pour a:visited*/
+@media all and (min-width: 768px) /*Tablettes, ordinateurs et grands écrans*/
 {
     header
     {
-        align-items: baseline;
-        justify-content: space-between
+        display: flex;
+        justify-content: space-between;
+        color: black
     }
 
-    #logo
+    .tel
     {
-        align-self: center;
-    }
-
-    nav
-    {
-        justify-self: flex-end;
+        display: none;
     }
 
     nav ul li a:hover
@@ -88,36 +42,71 @@ nav ul li a:hover
         padding-top: 15px;
     }
     
-  
+    nav ul
+    {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    #inscrire_pc
+    {
+        font-weight: bold;
+        color: #0065FC;
+    }
+
+    nav ul li a
+    {
+        text-decoration: none;
+        margin: 10px;
+    }
+    nav ul li a:hover
+    {
+        color: #0065FC;
+    }
 }
 
-@media all and (max-width: 992px) /*Téléphones et tablettes*/
+@media all and (max-width: 767px) /*Téléphones*/
 {
     header
     {
         border-bottom: #F2F2F2 2px solid;
-    }
-    
-    nav
-    {
-        flex-direction: row-reverse;
+        display: flex;
+        flex-direction: column;
     }
 
-    nav ul li:nth-child(3)
+    #ligne1_header
     {
-        
+        display: flex;
+        justify-content: space-between;
     }
 
-    nav ul li:nth-child(1), nav ul li:nth-child(2)
+    #ligne2_header
     {
-        align-self: flex-end;
+        display: flex;
+        justify-content: space-around;
     }
 
-    nav ul li a:hover
+    .pc
+    {
+        display: none;
+    }
+
+    #ligne2_header p a:hover
     {
         border-bottom: #0065FC 2px solid;
+        color: #0065FC;
+        padding-bottom: 15px;
+    }
+
+    #inscrire_tel
+    {
+        color: #0065FC;
+        font-weight: bold;
     }
 }
+
 
 /*Search Bar*/
 #search_bar

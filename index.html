@@ -11,21 +11,31 @@
     <title>Reservia</title>
 </head>
 <body>
-    <!--Revenir sur le header en responsive design-->
     <!--Retirer les espaces dans le dossier images Projet 2-->
     <header>
         <!--logo-->
-        <div id="logo">
+        <div id="logo" class="pc">
             <img src="Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo Reservia" />
         </div>
         <!--nav-->
-        <nav>
+        <nav class="pc">
             <ul>
                 <li><a href="#hebergement">Hébergements</a></li>
                 <li><a href="#activities">Activités</a></li>
-                <li><a href="#">S'inscrire</a></li>
+                <li><a href="#" id="inscrire_pc">S'inscrire</a></li>
             </ul>
         </nav>
+        <!--Pour téléphone-->
+        <div id="ligne1_header" class="tel">
+            <div id="logo_tel">
+                <img src="Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo Reservia" />
+            </div>
+            <p><a href="#" id="inscrire_tel">S'inscrire</a></p>
+        </div>
+        <div id="ligne2_header" class="tel">
+            <p><a href="#hebergement">Hébergements</a></p>
+            <p><a href="#activities">Activités</a></p>
+        </div>
     </header>
 
     <div id="title">
