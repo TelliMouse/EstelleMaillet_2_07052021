@@ -21,7 +21,7 @@ a:visited
     display: none;
 }
 
-/*Header*/ /*C'est bon sauf pour les problèmes de couleur et voir pour a:visited*/
+/*Header*/ /*FINI*/
 @media all and (min-width: 768px) /*Tablettes, ordinateurs et grands écrans*/
 {
     header
@@ -59,6 +59,7 @@ a:visited
     nav ul li a
     {
         text-decoration: none;
+        color: black;
         margin: 10px;
     }
     nav ul li a:hover
@@ -104,6 +105,11 @@ a:visited
     {
         color: #0065FC;
         font-weight: bold;
+    }
+
+    #ligne2_header p a
+    {
+        color: black;
     }
 }
 
@@ -377,21 +383,53 @@ aside
     position: relative;
 }
 
-/*Footer*/
+/*Footer*/ /*FINI*/
 footer
 {
     background: #F2F2F2;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.liste_footer
-{
-    margin-right: 18%;
+    color: black;
 }
 
 div h3 + ul
-{
+{   
     list-style: none;
     padding-inline-start: 0px;
+}
+
+.liste_footer ul li a
+{
+    color: black;
+}
+
+.liste_footer ul li a:hover
+{
+    color: #0065FC;
+}
+
+@media all and (min-width: 992px) /*Ordinateurs et grands écrans*/
+{
+    footer
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .liste_footer
+    {
+        margin-right: 18%;
+    }
+}
+
+@media all and (max-width: 991px) /*Téléphones et tablettes*/
+{
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .liste_footer
+    {
+        padding-left: 20px;
+    }
 }
