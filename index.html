@@ -11,7 +11,28 @@
     <title>Reservia</title>
 </head>
 <body>
-    <!--Retirer les espaces dans le dossier images Projet 2-->
+    <!--Icones filter (voir mail)
+            _mail directement + flex warp warp
+            _icone formulaire recherche
+            _icone info
+        Footer faire width = max content et espace au début
+            _margin en début à gauche
+            _taille des colonnes ul
+        Pour les cartes, au lieu de mettre la photo en background, faire une div au dessus des noms des hebergements
+            V créer les div et y mettre les photos
+            _centrer les photos
+            _ajuster la taille de la photo et du texte
+            _ajuster la taille des divs
+            _pour les activites, modifier la taille des div en responsive
+        Remettre les étoiles dans la bonne couleur et les bonnes icones
+            _changer les icones
+            _ajouter une classe pour la couleur
+        Travailler sur la présentation responsive pour tablettes
+            _ hebergement et hebergement pop sont les mêmes sauf qu'ils sont l'un sur l'autre
+            _les activites ont toutes la même taille mais sont alignées avec un warp
+            _le footer est le même mais justify center et flex warp warp
+    -->
+
     <header>
         <!--logo-->
         <div id="logo" class="pc">
@@ -109,6 +130,9 @@
             <div id="ligne2_hebergement">
                 <a href="#">  
                     <div class="carte_herbergement" id="cannebiere">
+                        <div class="photo_hebergement">
+                            <p><img src="Projet 2 - Reservia/images/hebergements/4_small/cannebiere_s.jpg" /></p>
+                        </div>
                         <div class="card1">
                             <p>Auberge la Cannebière</p>
                             <p>Nuit à partir de 25€</p>
@@ -124,6 +148,9 @@
                 </a>
                 <a href="#">
                     <div class="carte_herbergement" id="hotel_port">
+                        <div class="photo_hebergement">
+                            <p><img src="Projet 2 - Reservia/images/hebergements/4_small/hotel_port_s.jpg" /></p>
+                        </div>
                         <div class="card1">
                             <p>Hôtel du port</p>
                             <p>Nuit à partir de 52€</p>
@@ -139,6 +166,9 @@
                 </a>
                 <a href="#">
                     <div class="carte_herbergement" id="hotel_mouettes">
+                        <div class="photo_hebergement">
+                            <p><img src="Projet 2 - Reservia/images/hebergements/4_small/hotel_mouettes_s.jpg" /></p>
+                        </div>
                         <div class="card1">
                             <p>Hôtel Les mouettes</p>
                             <p>Nuit à partir de 76€</p>
@@ -156,6 +186,9 @@
             <div id="ligne3_hebergement">
                 <a href="#">
                     <div class="carte_herbergement" id="hotel_mer">
+                        <div class="photo_hebergement">
+                            <p><img src="Projet 2 - Reservia/images/hebergements/4_small/hotel_mer_s.jpg" /></p>
+                        </div>
                         <div class="card1">
                             <p>Hôtel de la mer</p>
                             <p>Nuit à partir de 46€</p>
@@ -171,6 +204,9 @@
                 </a>
                 <a href="#">
                     <div class="carte_herbergement" id="auberge_panier">
+                        <div class="photo_hebergement">
+                            <p><img src="Projet 2 - Reservia/images/hebergements/4_small/hotel_panier_s.jpg" /></p>
+                        </div>
                         <div class="card1">
                             <p>Auberge Le Panier</p>
                             <p>Nuit à partir de 23€</p>
@@ -186,6 +222,9 @@
                 </a>
                 <a href="#">
                     <div class="carte_herbergement" id="hotel_amina">
+                        <div class="photo_hebergement">
+                            <p><img src="Projet 2 - Reservia/images/hebergements/4_small/hotel_amina_s.jpg" /></p>
+                        </div>
                         <div class="card1">
                             <p>Hôtel chez Amina</p>
                             <p>Nuit à partir de 96€</p>
@@ -206,7 +245,7 @@
                 </a>
             </div>
         </div>
-
+        <!--Aside-->
         <aside>
             <div id="entete_aside">
                 <h2>Les plus populaires</h2>
@@ -214,6 +253,9 @@
             </div>
             <a href="#">
                 <div id="soleil_matin" class="hebergement_pop">
+                    <div class="photo_pop">
+                        <p><img src="Projet 2 - Reservia/images/hebergements/4_small/hotel_soleil_s.jpg" /></p>
+                    </div>
                     <div class="card2">
                         <p>Hôtel Le soleil du matin</p>
                         <p>Nuit à partir de 128€</p>
@@ -229,6 +271,9 @@
             </a>
             <a href="#">
                 <div id="coeur_eau" class="hebergement_pop">
+                    <div class="photo_pop">
+                        <p><img src="Projet 2 - Reservia/images/hebergements/4_small/coeur_eau_s.jpg" /></p>
+                    </div>
                     <div class="card2">
                         <p>Au coeur de l'eau Chambres d'hôtes</p>
                         <p>Nuit à partir de 71€</p>
@@ -244,6 +289,9 @@
             </a>
             <a href="#">
                 <div id="bleu_blanc" class="hebergement_pop">
+                    <div class="photo_pop">
+                        <p><img src="Projet 2 - Reservia/images/hebergements/4_small/hotel_bleu_s.jpg" /></p>
+                    </div>
                     <div class="card2">
                         <p>Hôtel Tout bleu et Blanc</p>
                         <p>Nuit à partir de 68€</p>
@@ -268,6 +316,9 @@
         <div id="corps_activities">
             <a href="#">
                 <div class="carte_activite" class="grand_activities" id="vieux_port">
+                    <div class="photo_activities">
+                        <p><img src="Projet 2 - Reservia/images/activites/4_small/vieux_port_s.jpg" /></p>
+                    </div>
                     <div class="activity_name">
                         <p>Vieux Port</p>
                     </div>
@@ -275,14 +326,20 @@
             </a>
             <div id="col2_activities">
                 <a href="#">
-                    <div class="carte_activite" class="petit-activities" id="fort_pomegues">
+                    <div class="carte_activite" class="petit_activities" id="fort_pomegues">
+                        <div class="photo_activities">
+                            <p><img src="Projet 2 - Reservia/images/activites/4_small/fort_pomegues_s.jpg" /></p>
+                        </div>
                         <div class="activity_name">
                             <p>Fort de Pomègues</p>
                         </div>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="carte_activite" class="petit-activities" id="iles_frioul">
+                    <div class="carte_activite" class="petit_activities" id="iles_frioul">
+                        <div class="photo_activities">
+                            <p><img src="Projet 2 - Reservia/images/activites/4_small/iles_frioul_s.jpg" /></p>
+                        </div>
                         <div class="activity_name">
                             <p>Îles du Frioul</p>
                         </div>
@@ -291,6 +348,9 @@
             </div>
             <a href="#">
                 <div class="carte_activite" class="grand_activities" id="parc_calanques">
+                    <div class="photo_activities">
+                        <p><img src="Projet 2 - Reservia/images/activites/4_small/parc_calanques_s.jpg" /></p>
+                    </div>
                     <div class="activity_name">
                         <p>Parc National des Calanques</p>
                     </div>
@@ -298,14 +358,20 @@
             </a>
             <div id="col4_activities">
                 <a href="#">
-                    <div class="carte_activite" class="petit-activities" id="notre_dame">
+                    <div class="carte_activite" class="petit_activities" id="notre_dame">
+                        <div class="photo_activities">
+                            <p><img src="Projet 2 - Reservia/images/activites/4_small/notre_dame_s.jpg" /></p>
+                        </div>
                         <div class="activity_name">
                             <p>Notre-Dame-de-la-Garde</p>
                         </div>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="carte_activite" class="petit-activities" id="parc_longchamps">
+                    <div class="carte_activite" class="petit_activities" id="parc_longchamps">
+                        <div class="photo_activities">
+                            <p><img src="Projet 2 - Reservia/images/activites/4_small/parc_longchamps_s.jpg" /></p>
+                        </div>
                         <div class="activity_name">
                             <p>Parc Longchamps</p>
                         </div>
