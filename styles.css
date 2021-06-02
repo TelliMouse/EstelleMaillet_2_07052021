@@ -133,7 +133,6 @@ a:visited
 /*Search Bar*/
 #search_bar
 {
-    position: relative;
     display: flex;
     align-items: center;
 }
@@ -147,31 +146,33 @@ form
 {
     border: 1px #F2F2F2 solid;
     background: #F2F2F2;
-    border-radius: 5px 0 0 5px;
-    height: 1.25em;
-    width: 1.25em;
+    border-radius: 12px 0 0 12px;
+    height: 1.7em;
+    width: 1.4em;
     justify-content: center;
     align-items: center;
-    padding-left: 0.6em;
-    padding-top: 0.35em;
-    padding-bottom: 0.15em;
+    padding-left: 0.7em;
+    padding-top: 0.6em;
+    padding-bottom: 0.05em;
 }
 
 #search_keyword
 {
     border: solid #F2F2F2 1px;
-    min-height: 30px;
+    height: 3em;
+    padding-left: 0.5em;
 }
 
 #rechercher
 {
     background-color: #0065FC;
     color: white;
+    font-weight: bold;
     margin-left: 0%;
     border: none;
     border: #0065FC solid 1px;
-    border-radius: 0 5px 5px 0;
-    min-height: 30px;
+    border-radius: 0 12px 12px 0;
+    height: 3em;
 }
 
 #icone_rechercher
@@ -179,7 +180,7 @@ form
     background-color: #0065FC;
     border: #0065FC solid 1px;
     border-radius: 5px/5px;
-    min-height: 30px;
+    height: 3em;
 }
 
 @media all and (max-width: 992px) /*Téléphones et tablettes*/
@@ -202,7 +203,6 @@ form
 #filters
 {
     display: flex;
-    justify-content: flex-start;
 }
 
 .filter
@@ -232,6 +232,7 @@ form
     margin-right: 15px;
     margin-left: 15px;
     color: black;
+    margin-left: 0.4em;
 }
 
 .filter p
@@ -240,16 +241,26 @@ form
     color: black;
 }
 
+/*Info*/
+
 #info
 {
     display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #icone_info
 {
     border: #f2f2f2 solid 1px;
-    border-radius: 10px/10px;
+    border-radius: 20px/20px;
     color: #0065FC;
+    height: 1.4em;
+    width: 1em;
+    margin-top: 0.8em;
+    margin-right: 0.7em;
+    padding-left: 0.6em;
+    padding-top: 0.15em;
 }
 
 .filter .icone
