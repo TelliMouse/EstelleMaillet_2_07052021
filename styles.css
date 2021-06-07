@@ -13,8 +13,8 @@ h1
 
 h2
 {
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: bolder;
 }
 
 a
@@ -130,7 +130,7 @@ a:visited
 }
 
 
-/*Search Bar*/
+/*Search Bar*/ /*FINI*/
 #search_bar
 {
     display: flex;
@@ -199,10 +199,11 @@ form
     }
 }
 
-/*Filtres*/
+/*Filtres*/ /*FINI*/
 #filters
 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .filter
@@ -241,7 +242,15 @@ form
     color: black;
 }
 
-/*Info*/
+@media all and (max-width: 767px)
+{
+    #p_filtre
+    {
+        width: 767px;
+    }
+}
+
+/*Info*/ /*FINI*/
 
 #info
 {
@@ -272,11 +281,13 @@ form
 #hebergement
 {
     display: flex;
+    position: relative;
 }
 
 #hebergement_marseille
 {
     display: flex;
+    position: relative;
     flex-direction: column;
     padding-right: 1.5em;
     padding-left: 1.5em;
@@ -287,6 +298,7 @@ form
 aside
 {
     display: flex;
+    position: relative;
     flex-direction: column;
     background: #F2F2F2;
     border-radius: 25px/25px;
@@ -327,23 +339,26 @@ aside
     border: solid #F2F2F2 1px;
     border-radius: 25px/25px;
     border: white 4px solid;
-    box-shadow: gray 6px 6px 4px;
+    box-shadow: #E6E6E6 6px 6px 4px;
+    height: 11em;
 }
 
 .hebergement_pop
 {
     display: flex;
     flex-direction: row;
-    height: 12em;
+    height: 7em;
     border: white 4px solid;
     border-radius: 25px/25px;
     margin-top: 1em;
+    overflow: hidden;
+    box-shadow: #E6E6E6 6px 6px 4px;
 }
 
 .card1
 {
     background: white;
-    height: max-content;
+    height: 5em;
     font-size: 0.9em;
     padding-left: 0.5em;
 }
@@ -385,13 +400,14 @@ aside
 
 .photo_hebergement
 {
-    height: 10em;
+    height: 7em;
     overflow: hidden;
+    object-fit: scale-down;
 }
 
 .photo_pop
 {
-    height: 12em;
+    height: 7em;
     overflow: hidden;
     width: 40%;
 }
@@ -409,14 +425,14 @@ aside
         background-color: #F2F2F2;
         border: #F2F2F2 1px solid;
         border-radius: 25px/25px;
-        margin-right: 1em;
+        margin-right: 2.5em;
         margin-left: 0.5em;
-        width: 66%;
+        width: 75%;
     }
 
     aside
     {
-        width: 33%;
+        width: 25%;
     }
 
     #ligne2_hebergement, #ligne3_hebergement
@@ -431,7 +447,17 @@ aside
         margin-bottom: 1em;
     }
 
-    .carte_herbergement
+    /*.carte_herbergement
+    {
+        width: 15em;
+    }*/
+
+    .carte_herbergement:nth-child(1), .carte_herbergement:nth-child(2)
+    {
+        margin-right: 1.5em;
+    }
+
+    #cannebiere img
     {
         width: 15em;
     }
@@ -456,6 +482,15 @@ aside
 {
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#titre_activities
+{
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 #corps_activities
@@ -463,36 +498,54 @@ aside
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
+    margin-bottom: 3em;
 }
 
 .carte_activite
 {
     object-fit: contain;
     overflow: hidden;
-    border-radius: 15px/15px;
+    border-radius: 25px/25px;
     position: relative;
-    width: 15em;
     display: flex;
     flex-direction: column;
+    box-shadow: #E6E6E6 6px 6px 4px;
+    margin-right: 2em;
 }
 
 .activity_name
 {
     background-color: white;
     color: black;
-    margin-top: 0px;
+    font-weight: bold;
+    /*margin-top: 0px;*/
+    height: 3em;
+    padding-left: 1em;
 }
+
+
 
 @media all and (min-width: 992px) /*Ordinateurs et grands écrans*/
 {
-    .grand_activities, #col2_activities, #col4_activities
+    .photo_activities_grand
     {
-        height: 25em;
+        height: 23em;
     }
 
-    .petit_activities
+    .photo_activities_petit
     {
-        height: 50%;
+        height: 9.5em;
+    }
+
+    #fort_pomegues, #notre_dame
+    {
+        margin-bottom: 1em;
+    }
+
+    .carte_activite
+    {
+        width: 18em;
     }
 }
 
