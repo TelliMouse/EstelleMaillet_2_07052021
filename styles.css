@@ -179,8 +179,9 @@ form
 {
     background-color: #0065FC;
     border: #0065FC solid 1px;
-    border-radius: 5px/5px;
+    border-radius: 12px/12px;
     height: 3em;
+    width: 3em;
 }
 
 @media all and (max-width: 992px) /*Téléphones et tablettes*/
@@ -383,21 +384,6 @@ aside
     font-weight: bold;
 }
 
-/*.card1 .stars .icone_blue
-{
-    color: #0065FC;
-}
-
-.card1 .icone_grey
-{
-    color: #F2F2F2;
-}
-
-.card2 p, .card2 p + p
-{
-    color: black;
-}*/
-
 .photo_hebergement
 {
     height: 7em;
@@ -412,8 +398,26 @@ aside
     width: 40%;
 }
 
+.photo_heb
+{
+    height: 40em;
+    margin-bottom: 20em;
+}
+
 @media all and (min-width: 992px) /*Ordinateurs et grands écrans*/
 {
+    #cannebiere, #hotel_port, #hotel_mouettes, #hotel_mer, #auberge_panier, #hotel_amina
+    {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    } 
+
+    #ligne2_hebergement
+    {
+        flex-wrap: wrap;
+    }
+    
     #hebergement
     {
         flex-direction: row;
@@ -428,6 +432,7 @@ aside
         margin-right: 2.5em;
         margin-left: 0.5em;
         width: 75%;
+        flex-wrap: wrap;
     }
 
     aside
@@ -446,11 +451,6 @@ aside
     {
         margin-bottom: 1em;
     }
-
-    /*.carte_herbergement
-    {
-        width: 15em;
-    }*/
 
     .carte_herbergement:nth-child(1), .carte_herbergement:nth-child(2)
     {
@@ -474,6 +474,39 @@ aside
     {
         display: flex;
         flex-direction: column;
+    }
+
+    .carte_herbergement
+    {
+        margin-bottom: 1em;
+    }
+
+    .hebergement_pop
+    {
+        height: 12em;
+    }
+
+    .photo_pop
+    {
+        height: 12em;
+    }
+
+    .card2
+    {
+        height: 12em;
+    }
+
+    #soleil_matin img, #coeur_eau img
+    {
+        height: 12em;
+    }
+
+    #bleu_blanc img
+    {
+        align-self: flex-start;
+        height: 25em;
+        margin-top: 0em;
+        margin-bottom: 40em;
     }
 }
 
@@ -524,8 +557,6 @@ aside
     padding-left: 1em;
 }
 
-
-
 @media all and (min-width: 992px) /*Ordinateurs et grands écrans*/
 {
     .photo_activities_grand
@@ -559,8 +590,26 @@ aside
 
     .carte_activite
     {
-        height: 200px;
-        width: 100%;
+        height: 12em;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    .photo_activities_grand, .photo_activities_petit
+    {
+        height: 9em;
+    }
+
+    #vieux_port img
+    {
+        height: 60em;
+        width: 40em;
+    }
+
+    #fort_pomegues img
+    {
+        height: 70em;
+        margin-bottom: 70em;
     }
 }
 
