@@ -359,9 +359,9 @@ aside
 .card1
 {
     background: white;
-    height: 5em;
     font-size: 0.9em;
     padding-left: 0.5em;
+    height: max-content;
 }
 
 .card1 p
@@ -398,12 +398,6 @@ aside
     width: 40%;
 }
 
-.photo_heb
-{
-    height: 40em;
-    margin-bottom: 20em;
-}
-
 @media all and (min-width: 992px) /*Ordinateurs et grands écrans*/
 {
     #cannebiere, #hotel_port, #hotel_mouettes, #hotel_mer, #auberge_panier, #hotel_amina
@@ -416,6 +410,13 @@ aside
     #ligne2_hebergement
     {
         flex-wrap: wrap;
+    }
+
+    img
+    {
+        max-width: 100%;
+        height: 7em;
+        object-fit: cover;
     }
     
     #hebergement
