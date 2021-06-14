@@ -27,16 +27,6 @@ a:visited
     display: none;
 }
 
-.icone_blue
-{
-    color: #0065FC;
-}
-
-.icone_grey
-{
-    color: #F2F2F2;
-}
-
 /*Header*/ /*FINI -- Validé en mentorat*/
 @media all and (min-width: 768px) /*Tablettes, ordinateurs et grands écrans*/
 {
@@ -441,7 +431,7 @@ aside img
     }
 }
 
-@media all and (min-width: 768px) and (max-width: 991px)
+@media all and (min-width: 768px) and (max-width: 991px) /*Tablette*/
 {
     #hebergement
     {
@@ -474,6 +464,16 @@ aside img
     {
         width: 31%;
     }
+
+    #soleil_matin, #coeur_eau, #bleu_blanc
+    {
+        height: 12em;
+    }
+
+    .card2
+    {
+        height: 13em;
+    }
 } 
 
 @media all and (max-width: 767px) /*Téléphones*/
@@ -482,26 +482,16 @@ aside img
     {
         flex-direction: column-reverse;
     }
-    
-    #ligne2_hebergement, #ligne3_hebergement
+
+    #cartes_hebergement
     {
         display: flex;
         flex-direction: column;
     }
 
-    .carte_herbergement
+    #cartes_hebergement img
     {
-        margin-bottom: 1em;
-    }
-
-    .hebergement_pop
-    {
-        height: 12em;
-    }
-
-    .photo_pop
-    {
-        height: 12em;
+        height: 10em;
     }
 
     .card2
@@ -509,18 +499,6 @@ aside img
         height: 12em;
     }
 
-    #soleil_matin img, #coeur_eau img
-    {
-        height: 12em;
-    }
-
-    #bleu_blanc img
-    {
-        align-self: flex-start;
-        height: 25em;
-        margin-top: 0em;
-        margin-bottom: 40em;
-    }
 }
 
 /*Activités*/
@@ -533,7 +511,7 @@ aside img
     padding-right: 2em;
 }
 
-#titre_activities
+#activities h2
 {
     margin-top: 2em;
     margin-bottom: 1em;
@@ -548,9 +526,8 @@ aside img
     margin-bottom: 3em;
 }
 
-.carte_activite
+#vieux_port, #fort_pomegues, #iles_frioul, #parc_calanques, #notre_dame, #parc_longchamps
 {
-    object-fit: contain;
     overflow: hidden;
     border-radius: 25px/25px;
     position: relative;
@@ -560,40 +537,89 @@ aside img
     margin-right: 2em;
 }
 
-.activity_name
+#activities img
+{
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+#activities p
 {
     background-color: white;
     color: black;
     font-weight: bold;
-    /*margin-top: 0px;*/
-    height: 3em;
+    height: 2em;
     padding-left: 1em;
 }
 
 @media all and (min-width: 992px) /*Ordinateurs et grands écrans*/
 {
-    .photo_activities_grand
+    #vieux_port, #col2_activities, #parc_calanques, #col4_activities
     {
-        height: 23em;
+        height: 25em;
+        width: 23%;
     }
 
-    .photo_activities_petit
+    #col2_activities, #col4_activities
     {
-        height: 9.5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #viex_port img, #parc_calanques img
+    {
+        height: 24em;
+    }
+
+    #fort_pomegues, #iles_frioul, #notre_dame, #parc_longchamps
+    {
+        height: 47%;
     }
 
     #fort_pomegues, #notre_dame
     {
-        margin-bottom: 1em;
-    }
-
-    .carte_activite
-    {
-        width: 18em;
+        margin-bottom: 1.5em;
     }
 }
 
-@media all and (max-width: 991px) /*Téléphones et tablettes*/
+@media all and (min-width: 768px) and (max-width: 991px) /*Tablette*/
+{
+    #corps_activities
+    {
+        flex-wrap: wrap;
+    }
+
+    #vieux_port, #parc_calanques
+    {
+        width: 29%;
+    }
+
+    #col2_activities, #col4_activities
+    {
+        display: flex;
+        flex-direction: row;
+        width: 66%;
+    }
+
+    #vieux_port, #col2_activities, #parc_calanques, #col4_activities
+    {
+        height: 25em;
+    }
+
+    #fort_pomegues, #iles_frioul, #notre_dame, #parc_longchamps
+    {
+        width: 48%;
+        height: 100%;
+    }
+
+    #vieux_port, #fort_pomegues, #iles_frioul
+    {
+        margin-bottom: 2em;
+    }
+}
+
+@media all and (max-width: 767px) /*Téléphones*/
 {
     #corps_activities
     {
