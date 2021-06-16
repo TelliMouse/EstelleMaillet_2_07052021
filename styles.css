@@ -7,13 +7,13 @@ body
 
 h1
 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: bold;
 }
 
 h2
 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bolder;
 }
 
@@ -197,6 +197,11 @@ form
     flex-wrap: wrap;
 }
 
+#filters a:hover
+{
+    box-shadow: #E6E6E6 6px 6px 4px;
+}
+
 .filter
 {
     display: flex;
@@ -205,6 +210,7 @@ form
     margin-right: 30px;
     border-left: none;
     flex-wrap: wrap;
+    margin-bottom: 1em;
 }
 
 .icone
@@ -627,28 +633,17 @@ aside img
         align-items: center;
     }
 
-    .carte_activite
+    #vieux_port, #fort_pomegues, #iles_frioul, #parc_calanques, #notre_dame, #parc_longchamps
     {
         height: 12em;
-        overflow: hidden;
-        margin-bottom: 1em;
+        width: 100%;
+        margin-bottom: 2em;
+        margin-right: 0em;
     }
 
-    .photo_activities_grand, .photo_activities_petit
+    #col2_activities, #col4_activities
     {
-        height: 9em;
-    }
-
-    #vieux_port img
-    {
-        height: 60em;
-        width: 40em;
-    }
-
-    #fort_pomegues img
-    {
-        height: 70em;
-        margin-bottom: 70em;
+        width: 100%;
     }
 }
 
