@@ -583,6 +583,11 @@ aside img
         height: 47%;
     }
 
+    #fort_pomegues img, #iles_frioul img, #notre_dame img, #parc_longchamps img
+    {
+        height: 8em;
+    }
+
     #fort_pomegues, #notre_dame
     {
         margin-bottom: 1.5em;
@@ -619,6 +624,11 @@ aside img
         height: 100%;
     }
 
+    #corps_activities img
+    {
+        height: 21em;
+    }
+
     #vieux_port, #fort_pomegues, #iles_frioul
     {
         margin-bottom: 2em;
@@ -639,6 +649,11 @@ aside img
         width: 100%;
         margin-bottom: 2em;
         margin-right: 0em;
+    }
+
+    #corps_activities img
+    {
+        height: 9em;
     }
 
     #col2_activities, #col4_activities
