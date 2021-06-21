@@ -68,7 +68,13 @@ a:visited
         color: black;
         margin: 10px;
     }
+
     nav ul li a:hover
+    {
+        color: #0065FC;
+    }
+
+    .heb
     {
         color: #0065FC;
     }
@@ -94,28 +100,42 @@ a:visited
         display: flex;
         justify-content: space-around;
     }
+    
+    #ligne2_header a
+    {
+        width: 50%;
+        color: black;
+    }
+
+    #ligne2_header div
+    {
+        width: 100%;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.8em;
+    }
+
+    .heb
+    {
+        color: #0065FC;
+    }
 
     .pc
     {
         display: none;
     }
 
-    #ligne2_header p a:hover
+    #ligne2_header a:hover
     {
-        border-bottom: #0065FC 2px solid;
         color: #0065FC;
-        padding-bottom: 15px;
+        border-bottom: #0065FC 1px solid;
     }
 
     #inscrire_tel
     {
         color: #0065FC;
         font-weight: bold;
-    }
-
-    #ligne2_header p a
-    {
-        color: black;
     }
 }
 
@@ -247,7 +267,7 @@ form
     }
 }
 
-/*Info*/ /*FINI*/
+/*Info*/
 
 #info
 {
@@ -339,7 +359,6 @@ form
 {
     color: black;
     font-weight: bold;
-    margin-top: 1.5em;
 }
 
 aside
@@ -362,6 +381,11 @@ aside
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#stonks
+{
+    padding-top: 1.3em;
 }
 
 #soleil_matin, #coeur_eau, #bleu_blanc
@@ -435,6 +459,11 @@ aside img
     {
         width: 23%;
     }
+
+    #soleil_matin, #coeur_eau
+    {
+        margin-bottom: 1.5em;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) /*Tablette*/
@@ -478,7 +507,12 @@ aside img
 
     .card2
     {
-        height: 13em;
+        height: 14em;
+    }
+
+    #soleil_matin, #coeur_eau
+    {
+        margin-bottom: 2.5em;
     }
 } 
 
